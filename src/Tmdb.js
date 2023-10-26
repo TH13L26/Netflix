@@ -19,9 +19,9 @@ export default {
                 items: await basicFetch(`/trending/all/week?language=pt-BR&api_key=${API_KEY}`)
             },
             {
-                slug: 'trending',
-                title: 'Recomendados para Você',
-                items: await basicFetch(`/discover/tv?width_network=213&language=pt-BR&api_key=${API_KEY}`)
+                slug: 'action',
+                title: 'Ação',
+                items:await basicFetch(`/discover/movie?with_genres=28&language=pt-BR&api_key=${API_KEY}`) 
             },
             {
                 slug: 'toprated',
